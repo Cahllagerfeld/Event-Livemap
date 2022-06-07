@@ -15,7 +15,7 @@ function App() {
     <main className="flex">
       <div className="w-1/3"></div>
       <div className="w-2/3">
-        <Map />
+        <Map events={events} />
       </div>
     </main>
   );
