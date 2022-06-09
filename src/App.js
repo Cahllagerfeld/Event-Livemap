@@ -5,8 +5,8 @@ import React, { useEffect, useState } from "react";
 function App() {
   const [events, setEvents] = useState([]);
   useEffect(() => {
-    socket.emit("event");
-    socket.on("events", (data) => {
+    socket.emit("github-event");
+    socket.on("events/github", (data) => {
       setEvents([...events, data]);
     });
   });
